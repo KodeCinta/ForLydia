@@ -1,0 +1,129 @@
+body {
+    background: url(Desain\ tanpa\ judul.png);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Menjadikan elemen selalu di tengah */
+    margin: 0;
+    overflow: hidden;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.685);
+
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.clickyes {
+    background-color: rgb(178, 10, 255);
+    color: white;
+}
+
+.clickno {
+    background-color: rgb(25, 189, 91);
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1); /* Animasi saat hover */
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+.textres{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1.6s ease-out forwards;
+}
+
+.kertas{
+    background: url(paperbnr.jpeg);
+    size: 100%;
+    color: black;
+    height: 300px;
+    margin: 20px;
+    animation: suratbuka 3s forwards;
+}
+
+@keyframes suratbuka{
+    from{
+        opacity: 0.5;
+        height: 5px;
+        width: 500px;
+    }to{
+        opacity: 1;
+        height: 500px;
+        width: 500px;
+    }
+    
+}
+
+.tol {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left; 
+    margin: 10px;
+    font-family: 'Georgia', serif;
+}
+
+
+.gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 10px;
+}
