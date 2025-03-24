@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /* Biar elemen tidak melebar melebihi layar */
+    overflow-x: hidden; /* Hilangkan scroll horizontal */
+}
+
+
 body {
     background: url(Desain\ tanpa\ judul.png);
     font-family: Arial, sans-serif;
